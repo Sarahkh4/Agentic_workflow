@@ -7,24 +7,6 @@ This project demonstrates three core LangGraph / LangChain patterns using `gpt�
 
 All code runs cleanly from the terminal using `uv`.
 
-## 📁 Project structure
-
-agentic_workflow/
-├── src/
-│ │ └── _init_.py # shared LLM (get_llm()) and env setup
-│ ├── prompt_chaining/ # sequential joke improvement
-│ ├── parallelization/ # joke + story + poem in parallel
-│ └── routing/ # LLM‑based router to story/joke/poem
-├── main.py # runs all three demos
-├── .env # optional: OPENAI_API_KEY, OPENAI_BASE_URL
-├── pyproject.toml with deps
-└── README.md
-
-- Each subfolder has:
-  - `state.py` – typed state for the graph.
-  - `nodes.py` – LLM call functions.
-  - `workflow.py` – the `StateGraph` builder and run/demo helpers.
-
 ## 🛠 Requirements
 
 You need:
